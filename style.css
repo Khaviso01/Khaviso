@@ -1,40 +1,298 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 20px 8%;
+* {
+    box-sizing: border-box;}
+#logo {
+    height: 70px;
+}
+header, nav {
+    font: bold 24px 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0b1426;
-    border-bottom: 1px solid var(--border);
-    z-index: 1000;
-}
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg-main);
-    color: white;
-    line-height: 1.7;
+    padding: 80px;
+    color:#6126f5;
 }
 
-#contact textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--card-bg);
+#work {
+    padding: 5%;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+.nav:hover {
+    color: #6d72fa;
+  }
+
+label {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #fcfbfb;
+    margin-top: 20px;
+    display: block;
+}
+textarea {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fcfbfb;
+    font-weight: 500;
+}
+
+p {font-size: 16px;
+    font: bold;
+    font-family: 'Inter', sans-serif;
+    color: #fcfbfb;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0mm;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    color: #6126f5;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+body {
+    background-image: url(media/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 400px;
+    border: 2px solid #007BFF;
+    border-radius: 12px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
+  }
+
+  .card-section { display: flex; 
+    justify-content: center;  
+    gap: 20px;  
+    flex-wrap: wrap;
+ }
+
+  .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    border-color: #0056b3;
+  }
+
+    /* Card content */
+  .card-about {
+    padding: 20px;
+  }
+
+  .card-heading {
+    margin: 0 0 15px;
+    font-size: 1.4em;
+    color: #ffffff;
+    border-bottom: 2px solid #007BFF; /* underline accent */
+    padding-bottom: 5px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .site {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007BFF;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  .site:hover {
+    background: #0056b3;
+  }
+
+#cv{background-color: #6126f5;
+    color: rgb(255, 255, 255);padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font: bold 16px 'Poppins', sans-serif;
+}
+
+#cv:hover{background-color: #c8c9e6;}
+
+div {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    border-radius: 50%;
+    border: 4px solid #000000;
+    transition: border 0.3s ease;
+}
+
+* Description text */
+.description {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* Skill Section */
+.skill-category {
+    background-color: transparent;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+.skill-title {
+    display: inline-block;
+}
+
+.skill-section {
+    text-align: left;
+}
+
+.skill-name {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.skill-item {
+    width: fit-content;
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#skill-item-1 { background-color: #bdbffd; }
+#skill-item-2 { background-color: #6fa1f8; }
+#skill-item-3 { background-color: rgb(66, 205, 248); }
+#skill-item-4 { background-color: rgb(5, 80, 126); }
+#skill-item-5 { background-color: rgb(27, 66, 110); }
+#skill-item-6 { background-color: rgb(70, 100, 249); }
+#skill-item-7 { background-color: rgb(71, 41, 237); }
+
+/* Icons */
+.fa-brands,
+.fa-solid {
+    font-size: 24px;
+    width: fit-content;
+    vertical-align: middle;
+}
+
+.division { width: 30px; }
+
+#division-line {
+    width: 1px;
+    height: 40px;
+    background-color: black;
+}
+
+.break { height: 30px; }
+
+/* About Cards */
+.about-card {
+    background-color: rgba(255, 255, 255, 0.76);
+    display: inline-block;
+    border-radius: 20px;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+.fa-solid { font-size: 36px; color: #484b91; }
+
+/* ====== Responsive Media Queries ====== */
+@media screen and (max-width: 1024px) {
+    #section1-div1,
+    #section1-div2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .skill-category {
+        width: 90%;
+    }
+
+    .about-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .skill-item {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill-item {
+        padding-inline: 10px;
+        font-size: 14px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 20px;
+    }
+
+    .about-card {
+        width: 95%;
+        padding: 15px;
+    }
 }
 
 footer {
+    background-color: #140a2b;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
-    padding: 25px;
-    background: #050c1a;
-    border-top: 1px solid var(--border);
-    color: #8892b0;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
