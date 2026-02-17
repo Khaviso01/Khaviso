@@ -4,23 +4,56 @@
 #logo {
     height: 70px;
 }
-header, nav {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     font: bold 24px 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px;
-    color:#6126f5;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid rgba(0, 59, 147, 0.2);
 }
 
-#work {
-    padding: 5%;
+#about, #contact, #skills { 
+    padding: 30px;
 }
 
-nav {
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.icon-wrapper svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+#khaviso {
+    border-radius: 400px;
+    box-shadow: #007BFF 0px 4px 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+#nav-bar a:hover {
+    color: #585eff;
+}
+
+.nav {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     display: flex;
     gap: 20px;
   }
@@ -36,6 +69,7 @@ label {
     margin-top: 20px;
     display: block;
 }
+
 textarea {
     width: 40%;
     padding: 10px;
@@ -53,13 +87,13 @@ a {
     font-weight: 500;
 }
 
-p {font-size: 16px;
+p {font-size: 19px;
     font: bold;
     font-family: 'Inter', sans-serif;
     color: #fcfbfb;
     line-height: 1.5;
     margin-bottom: 20px;
-    padding: 0mm;
+    padding: 10px;
 }
 
 h1 {
@@ -80,7 +114,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 0;
+    padding-top: 20%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -121,6 +155,71 @@ body {
     padding-bottom: 5px;
   }
 
+.contact-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #1e293b;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-card {
+    flex: 1;
+    background: #243447;
+    padding: 40px 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid #3b82f6;
+    box-shadow: 0 10px 25px rgba(59,130,246,0.3);
+}
+
+.contact-card.active {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 10px 30px rgba(59,130,246,0.4);
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle.dark {
+    background: #334155;
+}
+
+.icon-circle svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.contact-card h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
   .description {
     font-size: 14px;
     color: #ffffff;
@@ -129,6 +228,7 @@ body {
   }
 
   .site {
+    font: bold 16px 'Poppins', sans-serif;
     display: inline-block;
     padding: 10px 15px;
     background: #007BFF;
@@ -152,6 +252,18 @@ body {
 
 #cv:hover{background-color: #c8c9e6;}
 
+#data-science {
+    color: rgb(255, 255, 255);padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #007BFF;
+    text-decoration: none;
+    margin: 10px;
+    font: bold 16px 'Poppins', sans-serif;
+}
+
+#data-science:hover{background-color: #c8c9e6;}
+
+
 div {
     margin-top: 50px;
     display: flex;
@@ -160,11 +272,14 @@ div {
     gap: 20px;
 }
 
-img {
-    border-radius: 50%;
-    border: 4px solid #000000;
-    transition: border 0.3s ease;
+#my-name {
+    font-size: 72px;
+    font-family: 'Poppins', sans-serif;
+    color: #6126f5;
+    margin-bottom: 20px;
 }
+
+
 
 * Description text */
 .description {
@@ -289,10 +404,41 @@ img {
     }
 }
 
+
+.contact-form textarea, input {
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    gap: 100px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
 footer {
-    background-color: #140a2b;
     color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font : 14px 'Inter', sans-serif;
 }
