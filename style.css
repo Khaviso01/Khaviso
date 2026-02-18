@@ -24,7 +24,7 @@ header {
 }
 
 
-#about, #contact, #skills, #home, #work { 
+#about, #contact, #skills, #home, #work, #experience { 
     padding: 20px;
 }
 
@@ -129,8 +129,7 @@ h1 {
     font-size: 64px;
     font-family: 'Poppins', sans-serif;
     color: #13a5ff;
-    margin-bottom: 35px;
-    margin-top: 50px;
+    padding-top: 100px;
 }
 
 h2, h3 {
@@ -272,12 +271,12 @@ body {
     background: #0056b3;
   }
 
-#cv{background-color: #6126f5;
+#cv{background-color: #007BFF;
     color: rgb(255, 255, 255);padding: 10px;
     border-radius: 10px;
     text-decoration: none;
     margin: 10px;
-    font: bold 16px 'Poppins', sans-serif;
+    font: bold 20px 'Poppins', sans-serif;
 }
 
 #cv:hover{background-color: #c8c9e6;}
@@ -288,7 +287,7 @@ body {
     border: 2px solid #007BFF;
     text-decoration: none;
     margin: 10px;
-    font: bold 16px 'Poppins', sans-serif;
+    font: bold 20px 'Poppins', sans-serif;
 }
 
 #data-science:hover{background-color: #c8c9e6;}
@@ -302,11 +301,11 @@ div {
     gap: 20px;
 }
 
-#my-name {
-    font-size: 75px;
+#my-name{
+    font-size: 100px;
     font-family: 'Poppins', sans-serif;
     color: #2679f5;
-    margin-bottom: 20px;
+    padding-top: 1px;
 }
 
 
@@ -347,7 +346,7 @@ div {
     display: inline-block;
 }
 
-#skill-item-1 { background-color: #bdbffd; }
+#skill-item-1 { background-color: #787ced; }
 #skill-item-2 { background-color: #6fa1f8; }
 #skill-item-3 { background-color: rgb(66, 205, 248); }
 #skill-item-4 { background-color: rgb(5, 80, 126); }
@@ -495,7 +494,7 @@ div {
 }
 
 .timeline-item.right {
-  left: 25%;
+  left: 26.3%;
 }
 
 /* DOTS */
@@ -609,6 +608,7 @@ button {
     font-size: 25px;
     cursor: pointer;
     transition: 0.3s ease;
+    font: bold 25px 'Poppins', sans-serif;  
 }
 
 
