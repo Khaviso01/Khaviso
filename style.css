@@ -18,8 +18,8 @@ header {
     border-bottom: 3px solid rgba(0, 59, 147, 0.2);
 }
 
-#about, #contact, #skills { 
-    padding: 30px;
+#about, #contact, #skills, #home, #work { 
+    padding: 20px;
 }
 
 .icon-wrapper {
@@ -273,9 +273,9 @@ div {
 }
 
 #my-name {
-    font-size: 72px;
+    font-size: 75px;
     font-family: 'Poppins', sans-serif;
-    color: #6126f5;
+    color: #2679f5;
     margin-bottom: 20px;
 }
 
