@@ -46,7 +46,6 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ===== MOBILE NAV ===== */
 @media (max-width: 768px) {
 
     .hamburger {
@@ -59,11 +58,10 @@ body {
         left: 0;
         width: 100%;
         background: rgba(15, 27, 46, 0.98);
-        backdrop-filter: blur(15px);
         flex-direction: column;
         align-items: center;
-        padding: 25px 0;
         gap: 25px;
+        padding: 25px 0;
 
         max-height: 0;
         overflow: hidden;
@@ -73,11 +71,8 @@ body {
     #nav-bar.active {
         max-height: 500px;
     }
-
-    #nav-bar a {
-        font-size: 18px;
-    }
 }
+
 
 
 #logo {
