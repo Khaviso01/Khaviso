@@ -13,7 +13,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    font: bold 24px 'Poppins', sans-serif;
+    font: bold 20px 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,8 +70,6 @@ header {
     transition: box-shadow 0.3s ease;
 }
 
-
-
 #nav-bar a:hover {
     color: #585eff;
 }
@@ -115,7 +113,7 @@ a {
 
 p {font-size: 19px;
     font: bold;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', monospace;
     color: #fcfbfb;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -148,8 +146,8 @@ li {font-size: 15px;
 h1 {
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
-    color: #13a5ff;
-    padding-top: 100px;
+    color: #006df3;
+    padding-top: 10px;
 }
 
 h2, h3 {
@@ -170,14 +168,15 @@ body {
 }
 
 .card {
-    max-width: 400px;
-    border: 2px solid #007BFF;
-    border-radius: 12px;  
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 320px;
+    min-height: 380px;
+    border-radius: 15px;
+    padding: 25px;
+    border: solid 2px #006df3;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
+}
 
   .card-section { display: flex; 
     justify-content: center;  
@@ -191,10 +190,72 @@ body {
     border-color: #0056b3;
   }
 
-    /* Card content */
-  .card-about {
-    padding: 20px;
-  }
+
+  .about-card {
+    background: #334155;
+    width: 50%;
+    margin: 90px auto;              
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;        
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-paragraph {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button styling */
+#cv, 
+#data-science {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* CV button */
+#cv {
+    background: #2563eb;
+    color: white;
+}
+
+#cv:hover {
+    background: #1e40af;
+}
+
+/* Data science button */
+#data-science {
+    background: transparent;
+    border: 2px solid #2563eb;
+    color: #ffffff;
+}
+
+#data-science:hover {
+    background: #2563eb;
+    color: white;
+}
 
   .card-heading {
     margin: 0 0 15px;
@@ -278,56 +339,36 @@ body {
   }
 
   .site {
-    font: bold 16px 'Poppins', sans-serif;
-    display: inline-block;
-    padding: 10px 15px;
-    background: #007BFF;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(45deg, #007BFF, #4f9cff);
     color: white;
     text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
-    border-radius: 6px;
-  }
-
+    transition: 0.3s ease;
+}
   .site:hover {
     background: #0056b3;
   }
 
-#cv{background-color: #007BFF;
-    color: rgb(255, 255, 255);padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 10px;
-    font: bold 15px 'Poppins', sans-serif;
-}
-
-#cv:hover{background-color: #c8c9e6;}
-
-#data-science {
-    color: rgb(255, 255, 255);padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #007BFF;
-    text-decoration: none;
-    margin: 10px;
-    font: bold 15px 'Poppins', sans-serif;
-}
-
-#data-science:hover{background-color: #c8c9e6;}
-
 
 div {
-    margin-top: 50px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 1px;
 }
 
-#my-name{
-    font-size: 48px;
+.my-name {
+    font-size: 72px;
     font-family: 'Poppins', sans-serif;
     color: #2679f5;
     padding-top: 1px;
 }
+
+
 
 
 
@@ -383,6 +424,7 @@ div {
     vertical-align: middle;
 }
 
+
 .division { width: 30px; }
 
 #division-line {
@@ -393,15 +435,6 @@ div {
 
 .break { height: 30px; }
 
-/* About Cards */
-.about-card {
-    background-color: rgba(255, 255, 255, 0.76);
-    display: inline-block;
-    border-radius: 20px;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-}
 
 .fa-solid { font-size: 36px; color: #484b91; }
 
@@ -505,7 +538,7 @@ div {
 
 /* TIMELINE ITEMS */
 .timeline-item {
-  padding: 20px 40px;
+  padding: 60px 40px;
   position: relative;
   width: 50%;
 }
@@ -515,7 +548,7 @@ div {
 }
 
 .timeline-item.right {
-  left: 26.3%;
+  left: 280px;
 }
 
 /* DOTS */
@@ -626,10 +659,21 @@ button {
     border: none;
     padding: 15px;
     border-radius: 6px;
-    font-size: 25px;
     cursor: pointer;
     transition: 0.3s ease;
-    font: bold 25px 'Poppins', sans-serif;  
+    font: bold 18px 'Poppins', sans-serif;  
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
 }
 
 
