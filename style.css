@@ -2,7 +2,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
-    box-sizing: border-box;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* Animate into X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ===== MOBILE NAV ===== */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 27, 46, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        gap: 25px;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    #nav-bar.active {
+        max-height: 500px;
+    }
+
+    #nav-bar a {
+        font-size: 18px;
+    }
+}
+
+
 #logo {
     height: 70px;
 }
@@ -23,16 +100,21 @@ header {
     border-bottom: 1px solid rgba(8, 131, 255, 0.863);
 }
 
-@media screen and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        gap: 10px;
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
         text-align: center;
     }
 
-    header {
+    .nav {
         flex-direction: column;
-        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    #logo {
+        height: 55px;
     }
 }
 
@@ -112,7 +194,7 @@ a {
 }
 
 p {font-size: 19px;
-    font: bold;
+    font-weight: bold;
     font-family: 'Inter', monospace;
     color: #fcfbfb;
     line-height: 1.5;
@@ -168,7 +250,8 @@ body {
 }
 
 .card {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     min-height: 380px;
     border-radius: 15px;
     padding: 25px;
@@ -178,11 +261,14 @@ body {
     align-items: center;
 }
 
-  .card-section { display: flex; 
-    justify-content: center;  
-    gap: 20px;  
+
+  .card-section {
+    display: flex;
     flex-wrap: wrap;
- }
+    justify-content: center;
+    gap: 20px;
+}
+
 
   .card:hover {
     transform: translateY(-5px); 
@@ -193,16 +279,17 @@ body {
 
   .about-card {
     background: #334155;
-    width: 50%;
-    margin: 90px auto;              
+    width: 100%;
+    max-width: 800px;
+    margin: 90px auto;
     padding: 40px;
     border-radius: 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    box-sizing: border-box;        
     transition: transform 0.3s ease;
 }
+
+
 
 .about-card:hover {
     transform: translateY(-5px);
@@ -275,6 +362,18 @@ body {
     justify-content: space-between;
     gap: 30px;
 }
+
+@media (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
 
 .contact-card {
     flex-direction: column;
@@ -353,16 +452,10 @@ body {
   }
 
 
-div {
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1px;
-}
+
 
 .my-name {
-    font-size: 72px;
+    font-size: clamp(32px, 8vw, 72px);
     font-family: 'Poppins', sans-serif;
     color: #2679f5;
     padding-top: 1px;
@@ -519,6 +612,7 @@ div {
 
 /* TIMELINE */
 .timeline {
+    display: block;
   position: relative;
   max-width: 1100px;
   margin: auto;
@@ -538,6 +632,7 @@ div {
 
 /* TIMELINE ITEMS */
 .timeline-item {
+    display: block;
   padding: 60px 40px;
   position: relative;
   width: 50%;
@@ -550,6 +645,25 @@ div {
 .timeline-item.right {
   left: 280px;
 }
+
+@media screen and (max-width: 900px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item::after {
+    left: 13px;
+  }
+
+}
+
 
 /* DOTS */
 .timeline-item::after {
