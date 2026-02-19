@@ -20,12 +20,32 @@ header {
     padding: 15px 30px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(8, 131, 255, 0.863);
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+#logo {
+    padding: 10px;
+    font-size: 25px;
 }
 
 
 #about, #contact, #skills, #home, #work, #experience { 
-    padding: 20px;
+    padding: 25px;
 }
 
 .icon-wrapper {
@@ -126,14 +146,14 @@ li {font-size: 15px;
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 36px;
     font-family: 'Poppins', sans-serif;
     color: #13a5ff;
     padding-top: 100px;
 }
 
 h2, h3 {
-    font-size: 48px;
+    font-size: 28px;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     margin-bottom: 10px;
@@ -143,7 +163,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-top: 20%;
+    padding-top: 120px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -196,6 +216,7 @@ body {
 }
 
 .contact-card {
+    flex-direction: column;
     flex: 1;
     background: #243447;
     padding: 40px 20px;
@@ -276,7 +297,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     margin: 10px;
-    font: bold 20px 'Poppins', sans-serif;
+    font: bold 15px 'Poppins', sans-serif;
 }
 
 #cv:hover{background-color: #c8c9e6;}
@@ -287,7 +308,7 @@ body {
     border: 2px solid #007BFF;
     text-decoration: none;
     margin: 10px;
-    font: bold 20px 'Poppins', sans-serif;
+    font: bold 15px 'Poppins', sans-serif;
 }
 
 #data-science:hover{background-color: #c8c9e6;}
@@ -302,7 +323,7 @@ div {
 }
 
 #my-name{
-    font-size: 100px;
+    font-size: 48px;
     font-family: 'Poppins', sans-serif;
     color: #2679f5;
     padding-top: 1px;
