@@ -478,7 +478,7 @@ body {
 .icon-circle svg {
     width: 28px;
     height: 28px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .contact-card h3 {
