@@ -135,11 +135,37 @@ header {
     height: 40px;
 }
 
+.my-name {
+    font-size: clamp(32px, 8vw, 72px);
+    font-family: 'Poppins', sans-serif;
+    color: #2679f5;
+    padding-top: 1px;
+}
 
 #khaviso {
     border-radius: 400px;
     box-shadow: #007BFF 0px 4px 30px;
     transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .my-name {
+        font-size: 40px
+    }
+
+    #khaviso {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-name {
+        font-size: 28px;
+    }
+
+    #khaviso {
+        width: 50%    }
 }
 
 #nav-bar a:hover {
@@ -438,19 +464,6 @@ body {
   .site:hover {
     background: #0056b3;
   }
-
-
-
-
-.my-name {
-    font-size: clamp(32px, 8vw, 72px);
-    font-family: 'Poppins', sans-serif;
-    color: #2679f5;
-    padding-top: 1px;
-}
-
-
-
 
 
 * Description text */
