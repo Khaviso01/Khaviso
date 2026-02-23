@@ -633,13 +633,20 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-body * {
+section,
+.card,
+.about-card,
+.skill-category,
+.timeline-item,
+.contact-section,
+.contact-card,
+footer {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-body *.show {
+.show {
     opacity: 1;
     transform: translateY(0);
 }
