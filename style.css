@@ -58,7 +58,7 @@ body {
         align-items: center;
         gap: 25px;
         padding: 25px 0;
-
+        display: flex;
         height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
@@ -67,7 +67,7 @@ body {
     #nav-bar.active {
         height: 300px;
         max-height: 600px;
-        padding: 0;
+        padding: 25px 0;
         opacity: 1;
     }
 
