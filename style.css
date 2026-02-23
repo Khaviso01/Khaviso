@@ -80,7 +80,7 @@ body {
 
 
 #logo {
-    height: 70px;
+    height: 60px;
 }
 
 header {
@@ -113,15 +113,15 @@ header {
     }
 
     #logo {
-        height: 55px;
+        height: 45px;
     }
 }
 
 
 
 #logo {
-    padding: 10px;
-    font-size: 25px;
+    padding: 8px;
+    font-size: 20px;
 }
 
 
