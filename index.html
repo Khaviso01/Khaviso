@@ -516,6 +516,18 @@ allElements.forEach(el => {
     observer.observe(el);
 });
 
+const hamburger = document.querySelector(".hamburger");
+const navBar = document.querySelector("#nav-bar");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navBar.classList.toggle("active");
+});
+
+hamburger.addEventListener("click", () => {
+    document.body.classList.toggle("menu-open");
+});
+
 </script>
         
     </body>

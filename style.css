@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
 /* ===== HAMBURGER ===== */
 .hamburger {
     display: none;
