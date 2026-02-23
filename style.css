@@ -546,10 +546,7 @@ body {
         width: 90%;
     }
 
-    .about-card {
-        width: 45%;
-        margin-bottom: 20px;
-    }
+
 }
 
 @media screen and (max-width: 768px) {
