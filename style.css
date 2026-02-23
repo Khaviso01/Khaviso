@@ -41,9 +41,9 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ===============================
+/* ==========================
    PREMIUM MOBILE NAVIGATION
-=================================*/
+===========================*/
 
 @media (max-width: 768px) {
 
@@ -155,7 +155,6 @@ header {
         height: 45px;
     }
 }
-
 
 
 #logo {
