@@ -197,6 +197,21 @@ header {
     transition: box-shadow 0.3s ease;
 }
 
+#khaviso {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 250px;
+}
+
+@media (max-width: 768px) {
+    #khaviso {
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .my-name {
