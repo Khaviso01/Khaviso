@@ -554,7 +554,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .about-card {
-        width: 80%;
+        width: 60%;
         margin: 10px auto;
     }
 
@@ -576,7 +576,7 @@ body {
     }
 
     .about-card {
-        width: 95%;
+        width: 50%;
         padding: 25px;
     }
 }
