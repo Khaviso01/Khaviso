@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 img {
     max-width: 100%;
@@ -189,8 +184,7 @@ a {
 }
 
 p {font-size: 19px;
-    font-weight: bold;
-    font-family: 'Inter', monospace;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: #fcfbfb;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -198,7 +192,6 @@ p {font-size: 19px;
 }
 
 li {font-size: 15px;
-    font: bold;
     font-family: 'Inter', sans-serif;
     color: #fcfbfb;
     line-height: 1.5;
@@ -221,7 +214,7 @@ li {font-size: 15px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: clamp(28px, 5vw, 36px);
     font-family: 'Poppins', sans-serif;
     color: #006df3;
     padding-top: 10px;
@@ -571,7 +564,7 @@ body {
 
     .about-card {
         width: 95%;
-        padding: 15px;
+        padding: 25px;
     }
 }
 
@@ -634,11 +627,11 @@ body {
 }
 
 .timeline-item.left {
-  left: -25%;
+  left: 0;
 }
 
 .timeline-item.right {
-  left: 280px;
+  left: 50%;
 }
 
 @media screen and (max-width: 900px) {
@@ -650,11 +643,18 @@ body {
   .timeline-item {
     width: 100%;
     padding-left: 60px;
-    padding-right: 20px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
   }
 
   .timeline-item::after {
     left: 13px;
+    right: auto;
   }
 
 }
@@ -725,9 +725,6 @@ body {
 /* RESPONSIVE */
 @media screen and (max-width: 900px) {
 
-  .timeline::after {
-    left: 8px;
-  }
 
   .timeline-item {
     width: 100%;
@@ -776,12 +773,12 @@ button {
 @media screen and (max-width: 768px) {
     button {
         font-size: 18px;
-        width: 100%;
+        width: 50%;
     }
 
     .contact-form input,
     .contact-form textarea {
-        width: 100%;
+        width: 50%;
     }
 }
 
