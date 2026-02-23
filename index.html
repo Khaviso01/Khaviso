@@ -7,51 +7,6 @@
     <link rel="icon" type="image/x-icon" href="media/logo4.jpg">
     <title>Khaviso Vukeya</title>
     </head>
-    <script>
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", async function(event) {
-    event.preventDefault(); 
-
-    const formData = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
-      alert("Message sent successfully!");
-      form.reset(); 
-    } else {
-      alert("Oops! Something went wrong.");
-    }
-  });
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("nav-bar");
-    const links = nav.querySelectorAll("a");
-
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        nav.classList.toggle("active");
-    });
-
-
-    links.forEach(link => {
-        link.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            nav.classList.remove("active");
-        });
-    });
-});
-
-</script>
 
     <body>
         <header id="header">
@@ -488,7 +443,7 @@ gain hands-on & professional experience for roles in data, systems, risk managem
         
         <section class="form-section">
             <h1>Let's Connect!</h1>
-            <form class="contact-form" action="https://formspree.io/f/xwvnqdgd" method="POST" target="_blank">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvnqdgd" method="POST" target="_blank">
                 <span class="required">*</span>
                 <input type="text" id="name" name="name" placeholder="Name..." required><br>
                 <span class="required">*</span>
@@ -501,6 +456,51 @@ gain hands-on & professional experience for roles in data, systems, risk managem
         <footer>
             <p>&copy; 2026 Khaviso Vukeya. All rights reserved.</p>
         </footer>
+         <script>
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset(); 
+    } else {
+      alert("Oops! Something went wrong.");
+    }
+  });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav-bar");
+    const links = nav.querySelectorAll("a");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav.classList.remove("active");
+        });
+    });
+});
+
+</script>
         
     </body>
 </html>

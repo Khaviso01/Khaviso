@@ -45,6 +45,7 @@ body {
 
     .hamburger {
         display: flex;
+        align-items: center;
     }
 
     #nav-bar {
@@ -64,7 +65,7 @@ body {
     }
 
     #nav-bar.active {
-        max-height: 500px;
+        max-height: 600px;
     }
 }
 
