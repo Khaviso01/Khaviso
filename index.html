@@ -500,6 +500,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const allElements = document.querySelectorAll("body *");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.05
+});
+
+allElements.forEach(el => {
+    observer.observe(el);
+});
+
 </script>
         
     </body>
