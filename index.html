@@ -456,31 +456,8 @@ gain hands-on & professional experience for roles in data, systems, risk managem
             <p>&copy; 2026 Khaviso Vukeya. All rights reserved.</p>
         </footer>
          <script>
-  const form = document.getElementById("contact-form");
+            document.addEventListener("DOMContentLoaded", function () {
 
-  form.addEventListener("submit", async function(event) {
-    event.preventDefault(); 
-
-    const formData = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
-      alert("Message sent successfully!");
-      form.reset(); 
-    } else {
-      alert("Oops! Something went wrong.");
-    }
-  });
-
-
-document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger");
     const nav = document.getElementById("nav-bar");
     const links = nav.querySelectorAll("a");
@@ -490,40 +467,31 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.toggle("active");
     });
 
-
     links.forEach(link => {
         link.addEventListener("click", () => {
             hamburger.classList.remove("active");
             nav.classList.remove("active");
         });
     });
-});
 
-const allElements = document.querySelectorAll("body *");
+    // Reveal animation
+    const elements = document.querySelectorAll(
+        "section, .card, .about-card, .skill-category, .timeline-item, .contact-section, .contact-card, footer"
+    );
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.1
     });
-}, {
-    threshold: 0.05
+
+    elements.forEach(el => observer.observe(el));
 });
-
-allElements.forEach(el => {
-    observer.observe(el);
-});
-
-const hamburger = document.getElementById("hamburger");
-const navBar = document.getElementById("nav-bar");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navBar.classList.toggle("active");
-});
-
-</script>
+         </script>
         
     </body>
 </html>
