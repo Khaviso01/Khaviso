@@ -66,7 +66,6 @@ body {
 
     #nav-bar.active {
         height: 300px;
-        max-height: 600px;
         padding: 25px 0;
         opacity: 1;
     }
