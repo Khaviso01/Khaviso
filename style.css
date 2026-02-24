@@ -1,5 +1,6 @@
-I want nice looking hamburger tab, please fix my css: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 
 img {
@@ -962,6 +963,156 @@ footer {
   .timeline-item::after {
     left: 1px;
   }
+}
+
+
+.certificates{
+    padding:70px 0;
+    max-width:1000px;   /* controls total width */
+    margin:0 auto;      /* center section */
+    text-align:center;
+}
+
+.certificates h1{
+    font-size:42px;
+    font-weight:700;
+}
+
+.certificates h1 span{
+    color:#5da9ff;
+}
+
+.subtitle{
+    margin-top:12px;
+    color:#9fb3d9;
+    max-width:550px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+}
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 420px); /* fixed width cards */
+    justify-content:center;  /* centers the grid */
+    gap:24px;
+    margin-top:50px;
+}
+
+.cert-card{
+    position:relative;
+    background:linear-gradient(145deg,#0f1f3d,#0a162b);
+    border-radius:18px;
+    padding:22px; /* smaller padding */
+    text-align:left;
+    border:1px solid rgba(93,169,255,0.15);
+    box-shadow:0 0 18px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.cert-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(93,169,255,0.2);
+}
+
+.verified{
+    position:absolute;
+    top:12px;
+    right:-38px;
+    background:#5da9ff;
+    color:#0b1b35;
+    padding:4px 40px;
+    transform:rotate(45deg);
+    font-size:10px;
+    font-weight:600;
+}
+
+.cert-top{
+    display:flex;
+    gap:14px; /* tighter spacing */
+    align-items:center;
+}
+
+.icon-box{
+    background:#0e223f;
+    padding:10px;
+    border-radius:12px;
+    width:48px;   /* smaller */
+    height:48px;  /* smaller */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon-box svg{
+    width:22px;  /* smaller icon */
+}
+
+.cert-card h3{
+    font-size:16px; /* smaller title */
+    margin-bottom:3px;
+}
+
+.cert-card small{
+    color:#5da9ff;
+    font-size:13px;
+}
+
+.tag{
+    display:inline-block;
+    margin-top:6px;
+    padding:4px 10px;
+    background:#13294b;
+    border-radius:20px;
+    font-size:10px;
+    color:#9fb3d9;
+}
+
+.buttons{
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+}
+
+.btn-outline,
+.btn-fill{
+    flex:1;
+    padding:9px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid #5da9ff;
+    color:#5da9ff;
+}
+
+.btn-outline:hover{
+    background:#5da9ff;
+    color:#0b1b35;
+}
+
+.btn-fill{
+    background:#1f2d45;
+    border:none;
+    color:white;
+}
+
+.btn-fill:hover{
+    background:#5da9ff;
+    color:#0b1b35;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+    .cert-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 .contact-form textarea, input {
