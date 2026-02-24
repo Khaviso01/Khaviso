@@ -225,8 +225,8 @@ header {
 
 .my-name {
     font-size: clamp(32px, 8vw, 72px);
-    font-family: 'Poppins', sans-serif;
-    color: #3687ff;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #4d94ff;
     padding-top: 1px;
 }
 
