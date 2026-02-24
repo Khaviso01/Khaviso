@@ -636,6 +636,72 @@ body {
 
 .fa-solid { font-size: 36px; color: #484b91; }
 
+/* =========================
+   MOBILE FIX FOR SKILLS
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Remove extra spacing */
+  #skills br {
+    display: none;
+  }
+
+  #skills {
+    padding: 30px 15px;
+  }
+
+  #skills h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  /* Make table behave like stacked blocks */
+  .skill-category table,
+  .skill-category tr,
+  .skill-category td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Hide divider column */
+  .division,
+  #division-line {
+    display: none;
+  }
+
+  /* Add spacing between categories */
+  .skill-title {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .skill-section {
+    margin-bottom: 20px;
+  }
+
+  /* Make skill items wrap nicely */
+  .skill-item {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px 5px 5px 0;
+    font-size: 0.8rem;
+    border-radius: 20px;
+  }
+
+  /* Prevent text overflow */
+  .skill-name {
+    word-wrap: break-word;
+  }
+
+  /* Remove weird table spacing */
+  table {
+    border-spacing: 0;
+  }
+
+}
+
 /* ====== Responsive Media Queries ====== */
 @media screen and (max-width: 1024px) {
     #section1-div1,
