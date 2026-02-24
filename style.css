@@ -166,7 +166,7 @@ header {
 }
 
 
-#about, #contact, #skills, #home, #work, #experience { 
+#about, #contact, #skills, #home, #work, #certifications, #experience { 
     padding: 25px;
 }
 
@@ -1109,7 +1109,7 @@ footer {
 
 /* Responsive */
 
-@media(max-width:900px){
+@media(max-width:768px){
     .cert-grid{
         grid-template-columns:1fr;
     }
