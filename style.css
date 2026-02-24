@@ -169,6 +169,30 @@ header {
     padding: 25px;
 }
 
+.tool-icon svg {
+  fill: currentColor;
+}
+
+.tool-icon.powerbi {
+  color: #f2c811;
+}
+
+.tool-icon.python {
+  color: #3776ab;
+}
+
+.tool-icon.excel {
+  color: #1d6f42;
+}
+
+.tool-icon.mysql {
+  color: #00758f;
+}
+
+.tool-icon.webdev {
+  color: #2563eb; 
+}
+
 .tech-stack {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
@@ -559,6 +583,7 @@ body {
     text-align: center;
     padding: 10px;
     background: linear-gradient(45deg, #007BFF, #4f9cff);
+    font-family: 'Space Grotesk', sans-serif;
     color: white;
     text-decoration: none;
     border-radius: 8px;
