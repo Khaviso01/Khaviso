@@ -129,7 +129,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    font: bold 20px 'Poppins', sans-serif;
+    font: bold 20px 'Space Grotesk', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,7 +161,7 @@ header {
 
 #logo {
     padding: 8px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -196,6 +196,7 @@ header {
   white-space: nowrap; /* keeps text aligned cleanly */
   transition: all 0.25s ease;
 }
+
 
 .pill i {
   font-size: 16px;
@@ -344,14 +345,14 @@ li {font-size: 15px;
 
 h1 {
     font-size: clamp(28px, 5vw, 36px);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     color: #006df3;
     padding-top: 10px;
 }
 
 h2, h3 {
     font-size: 28px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -435,6 +436,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
     transition: 0.3s ease;
 }
 
