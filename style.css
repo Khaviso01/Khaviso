@@ -136,7 +136,7 @@ header {
     padding: 15px 30px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
-    border-bottom: 1px solid rgba(8, 131, 255, 0.863);
+    border-bottom: 1px solid rgb(94, 94, 94);
 }
 
 @media (max-width: 768px) {
