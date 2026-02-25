@@ -338,6 +338,10 @@ a {
     font-weight: 500;
 }
 
+#at {
+    color: #ffffff;
+}
+
 p {font-size: 19px;
     font-family: 'Space Grotesk', sans-serif;
     color: #fcfbfb;
