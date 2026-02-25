@@ -213,7 +213,7 @@ header {
   background: #0d2746;
   border: 1px solid rgba(255, 255, 255, 0.06);
 
-  color: #cbd5e1;
+  color: #338fff;
   font-size: 13.5px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -346,6 +346,14 @@ p {font-size: 19px;
     padding: 10px;
 }
 
+.highlight {
+  background-color: rgba(0, 140, 255, 0.47);
+  padding: 2px 6px;
+  border-radius: 10px;
+  font: bold 16px 'Poppins', sans-serif;
+  color: #4093ff;
+}
+
 li {font-size: 15px;
     font-family: 'Inter', sans-serif;
     color: #fcfbfb;
@@ -442,14 +450,7 @@ body {
     font-size: 28px;
 }
 
-.about-paragraph {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Button styling */
 #cv, 
@@ -979,7 +980,7 @@ footer {
 }
 
 .certificates h1 span{
-    color:#5da9ff;
+    color:#ffffff;
 }
 
 .subtitle{
@@ -1017,18 +1018,18 @@ footer {
 
 .verified{
     position:absolute;
-    top:12px;
-    right:-38px;
+    top:9px;
+    right:-30px;
     background:#5da9ff;
     color:#0b1b35;
-    padding:4px 40px;
+    padding:4px 35px;
     transform:rotate(45deg);
     font-size:10px;
     font-weight:600;
 }
 
 .cert-top{
-    display:flex;
+    display: inline-grid;
     gap:14px; /* tighter spacing */
     align-items:center;
 }
@@ -1068,7 +1069,7 @@ footer {
     color:#9fb3d9;
 }
 
-.buttons{
+.buttons {
     margin-top:20px;
     display:flex;
     gap:12px;
@@ -1083,6 +1084,9 @@ footer {
     font-weight:600;
     cursor:pointer;
     transition:0.3s;
+    display: flex;              
+    justify-content: center;    
+    align-items: center; 
 }
 
 .btn-outline{
