@@ -213,7 +213,7 @@ header {
   background: #0d2746;
   border: 1px solid rgba(255, 255, 255, 0.06);
 
-  color: #338fff;
+  color: #93c4ff;
   font-size: 13.5px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -344,6 +344,12 @@ p {font-size: 19px;
     line-height: 1.5;
     margin-bottom: 20px;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
 }
 
 .highlight {
