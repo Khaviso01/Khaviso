@@ -645,7 +645,7 @@ body {
 }
 
 .skill-section {
-    text-align: left;
+    text-align: center;
 }
 
 .skill-name {
@@ -782,7 +782,7 @@ body {
     }
 
     .skill-item {
-        display: block;
+        display: inline-block;
         margin: 10px auto;
     }
 }
