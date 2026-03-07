@@ -140,6 +140,8 @@ header {
     border-bottom: 1px solid rgb(94, 94, 94);
 }
 
+ 
+
 @media (max-width: 768px) {
 
     header {
@@ -168,6 +170,7 @@ header {
 
 #about, #contact, #skills, #home, #work, #certifications, #experience { 
     padding: 25px;
+    scroll-margin-top: 130px;
 }
 
 .tool-icon svg {
