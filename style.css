@@ -423,7 +423,7 @@ body {
     min-height: 380px;
     border-radius: 15px;
     padding: 25px;
-    border: solid 2px #006df3;
+    border: solid 1px #006df3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -617,7 +617,7 @@ body {
    .read {
     text-align: center;
     padding: 10px;
-    border: 2px solid #4d94ff;
+    border: 1px solid #4d94ff;
     font-family: 'Space Grotesk', sans-serif;
     color: white;
     text-decoration: none;
@@ -666,13 +666,20 @@ body {
     display: inline-block;
 }
 
-#skill-item-1 { background-color: #787ced; }
-#skill-item-2 { background-color: #6fa1f8; }
-#skill-item-3 { background-color: rgb(66, 205, 248); }
-#skill-item-4 { background-color: rgb(5, 80, 126); }
-#skill-item-5 { background-color: rgb(27, 66, 110); }
-#skill-item-6 { background-color: rgb(70, 100, 249); }
-#skill-item-7 { background-color: rgb(71, 41, 237); }
+#skill-item-1 { 
+border: 1px solid #006df3; }
+#skill-item-2 { 
+border: 1px solid #006df3; }
+#skill-item-3 { 
+border: 1px solid #006df3; }
+#skill-item-4 { 
+border: 1px solid #006df3; }
+#skill-item-5 { 
+border: 1px solid #006df3; }
+#skill-item-6 { 
+border: 1px solid #006df3; }
+#skill-item-7 { 
+border: 1px solid #006df3; }
 
 /* Icons */
 .fa-brands,
@@ -1055,7 +1062,6 @@ footer {
 
 .verified{
     position:absolute;
-    top:9px;
     right:-30px;
     background:#5da9ff;
     color:#0b1b35;
