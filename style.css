@@ -259,7 +259,9 @@ header {
 .my-name {
     font-size: clamp(32px, 8vw, 72px);
     font-family: 'Space Grotesk', sans-serif;
-    color: #4d94ff;
+    background: linear-gradient(90deg, #0066ff, #7dbeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-top: 1px;
 }
 
@@ -287,7 +289,7 @@ header {
 @media (max-width: 768px) {
 
     .my-name {
-        font-size: 40px
+        font-size: 49px
     }
 
     #khaviso {
@@ -297,7 +299,7 @@ header {
 
 @media (max-width: 480px) {
     .my-name {
-        font-size: 28px;
+        font-size: 42px;
     }
 
     #khaviso {
