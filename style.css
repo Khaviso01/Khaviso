@@ -259,7 +259,6 @@ header {
 
 .my-name {
     font-size: clamp(32px, 8vw, 72px);
-    font-family: 'Space Grotesk', sans-serif;
     background: linear-gradient(90deg, #0066ff, #7dbeff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -501,7 +500,6 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-    font-family: 'Space Grotesk', sans-serif;
     transition: 0.3s ease;
 }
 
