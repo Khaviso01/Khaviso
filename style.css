@@ -199,6 +199,7 @@ header {
 
 .tool-icon.download {
     color: #ffffff;
+    font: ;
 }
 
 .tech-stack {
@@ -214,7 +215,7 @@ header {
   justify-content: center;
 
   gap: 8px;
-  padding: 8px 18px;
+  padding: 5px 20px;
   border-radius: 999px;
 
   background: #0d2746;
@@ -274,10 +275,11 @@ header {
 #khaviso {
     width: 100%;
     max-width: 350px;
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
-    border-radius: 250px;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -289,7 +291,7 @@ header {
 @media (max-width: 768px) {
 
     .my-name {
-        font-size: 49px
+        font-size: 53px
     }
 
     #khaviso {
@@ -299,7 +301,7 @@ header {
 
 @media (max-width: 480px) {
     .my-name {
-        font-size: 42px;
+        font-size: 45px;
     }
 
     #khaviso {
@@ -399,7 +401,6 @@ h1 {
     font-size: clamp(28px, 5vw, 36px);
     font-family: 'Space Grotesk', sans-serif;
     color: #4d94ff;
-    padding-top: 10px;
 }
 
 h2, h3 {
@@ -469,6 +470,25 @@ body {
     font-size: 28px;
 }
 
+.about-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.about-title h1 {
+    margin: 0;
+    padding-top: 0;
+}
+
+.about-title svg {
+    position: relative;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 
 
 /* Button styling */
@@ -487,6 +507,8 @@ body {
 
 /* CV button */
 #cv {
+    gap: 8px;
+    display: inline-flex;
     background: #2563eb;
     color: white;
     border: 2px solid #2563eb;
@@ -609,7 +631,6 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
     transition: 0.3s ease;
 }
   .site:hover {
@@ -624,7 +645,6 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
     transition: 0.3s ease;
 }
   .read:hover {
@@ -915,7 +935,7 @@ footer {
 
   .timeline-item.left,
   .timeline-item.right {
-    left: 0;
+    left: 12px;
     text-align: left;
   }
 
@@ -1000,7 +1020,7 @@ footer {
   }
 
   .timeline-item.right {
-    left: 0;
+    left: 20px;
   }
 
   .timeline-item::after {
