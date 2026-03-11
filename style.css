@@ -409,7 +409,7 @@ h2, h3 {
     margin-bottom: 10px;
 }
 body {
-    background-image: url(media/background.jpg);
+    background: linear-gradient(to right, #000003, #001425);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -500,6 +500,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
     transition: 0.3s ease;
 }
 
@@ -510,6 +511,7 @@ body {
     background: #2563eb;
     color: white;
     border: 2px solid #2563eb;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 #cv:hover {
