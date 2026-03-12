@@ -199,7 +199,10 @@ header {
 
 .tool-icon.download {
     color: #ffffff;
-    font: ;
+}
+
+.tool-icon.visit {
+    color: #ffffff;
 }
 
 .tech-stack {
@@ -402,6 +405,8 @@ h1 {
     color: #4d94ff;
 }
 
+
+
 h2, h3 {
     font-size: 28px;
     font-family: 'Space Grotesk', sans-serif;
@@ -484,8 +489,8 @@ body {
 .about-title svg {
     position: relative;
     top: 2px;
-    width: 40px;
-    height: 40px;
+    width: 29px;
+    height: 29px;
     vertical-align: middle;
 }
 
@@ -625,6 +630,7 @@ body {
 
   .site {
     text-align: center;
+    align-items: center;
     padding: 10px;
     background: linear-gradient(45deg, #007BFF, #4f9cff);
     font-family: 'Space Grotesk', sans-serif;
@@ -632,6 +638,8 @@ body {
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s ease;
+    display: inline-flex;
+    gap: 8px;
 }
   .site:hover {
     background: #0056b3;
@@ -1196,7 +1204,7 @@ footer {
 }
 
 .contact-form textarea, input {
-    background-color: #111;
+    background-color: #111111;
     border: 1px solid #222;
     border-radius: 6px;
     padding: 15px;
@@ -1221,12 +1229,16 @@ button {
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s ease;
-    font: bold 18px 'Poppins', sans-serif;  
+    font: bold 18px 'Poppins', sans-serif;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
     button {
-        font-size: 18px;
+        font-size: 15px;
         width: 50%;
     }
 
