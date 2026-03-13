@@ -525,9 +525,8 @@ body {
 #cv {
     gap: 8px;
     display: inline-flex;
-    background: #2563eb;
+    background: #621fff;
     color: white;
-    border: 2px solid #2563eb;
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -538,7 +537,7 @@ body {
 /* Data science button */
 #data-science {
     background: transparent;
-    border: 2px solid #2563eb;
+    border: 2px solid #621fff;
     color: #ffffff;
 }
 
@@ -1124,25 +1123,28 @@ footer {
     font-weight:600;
 }
 
+
+
 .cert-top{
     display: inline-grid;
     gap:14px; /* tighter spacing */
     align-items:center;
 }
 
-.icon-box{
-    background:#0e223f;
-    padding:10px;
-    border-radius:12px;
-    width:48px;   /* smaller */
-    height:48px;  /* smaller */
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.icon-box {
+    width: 60px;   /* size of the icon box */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.icon-box svg{
-    width:22px;  /* smaller icon */
+.icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* keeps proportions */
 }
 
 .cert-card h3{
